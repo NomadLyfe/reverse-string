@@ -1,5 +1,5 @@
 function reverseString(str) {
-  // type your code here
+  return (str === '') ? '' : reverseString(str.substring(1)) + str.charAt(0)
 }
 
 if (require.main === module) {
